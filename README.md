@@ -12,7 +12,10 @@ Just download 'dist', rename it to 'slick-wp' and upload to your plugins folder.
 Add "data-slick" as attribute to activate
 
 <code>
-&lt;div data-slick&gt; &lt;div&gt;Slide #1&lt;/div&gt; &lt;div&gt;Slide #2&lt;/div&gt; &lt;/div&gt;
+&lt;div data-slick&gt; <br>
+&lt;div&gt;Slide #1&lt;/div&gt; <br>
+&lt;div&gt;Slide #2&lt;/div&gt;<br>
+&lt;/div&gt;<br>
 </code>
 
 Additional options passed to .slick() can be added as data-<option-name>. The whole $.data() is passed to the constructor except for the data-slick.
