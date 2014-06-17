@@ -14,7 +14,7 @@ function slick_enqueue_scripts(){
 	
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('slick', plugins_url() . '/slick-wp/slick/slick.min.js', array('jquery'), '1.0', true);
-	wp_enqueue_script('slick', plugins_url() . '/slick-wp/js/slick-defaults.js', array('jquery'), '1.0', true);
+	wp_enqueue_script('slick-defaults', plugins_url() . '/slick-wp/js/slick-defaults.js', array('slick', 'jquery'), '1.0', true);
 	wp_enqueue_style('slick', plugins_url() . '/slick-wp/slick/slick.css');
 	
 }

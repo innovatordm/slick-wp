@@ -8,9 +8,14 @@ Enables autoload of slick sliders by adding data-slick as attribute. All data-* 
 	
 	$(function(){	
 		
-		$('[data-slick]').foreach(function(){
-			$(this).slick($(this).data());
-		});
+
+			$('[data-slick]').each(function(){
+				
+				var opts = $(this).data();
+				delete opts['slick']; //unset our handle
+				
+				$(this).slick(opts);
+			});
 		
 		
 	});
